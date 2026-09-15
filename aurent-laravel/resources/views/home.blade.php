@@ -5,16 +5,16 @@
 @section('content')
 <section class="hero">
     <div class="container">
-        <h1>Timepieces of Distinction</h1>
-        <p>Discover authenticated luxury watches from independent ateliers and heritage maisons — each piece inspected, warranted, and delivered with care.</p>
-        <a href="{{ route('shop') }}" class="btn">Explore the Collection</a>
+        <h1>Watches of Uncommon Character</h1>
+        <p>Explore a curated world of fine horology — hand-picked timepieces from bold independent makers and established workshops, guaranteed authentic and delivered with precision.</p>
+        <a href="{{ route('shop') }}" class="btn">Browse the Edit</a>
     </div>
 </section>
 
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Featured Watches</h2>
-        <p class="section-subtitle">Curated selections from our latest arrivals.</p>
+        <h2 class="section-title">Editor's Picks</h2>
+        <p class="section-subtitle">Standout pieces hand-selected from the atelier.</p>
         <div class="grid grid-4">
             @foreach($featured as $product)
                 @include('components.product-card', ['product' => $product])
@@ -25,8 +25,8 @@
 
 <section class="section" style="background:#fff;">
     <div class="container">
-        <h2 class="section-title">New Arrivals</h2>
-        <p class="section-subtitle">The freshest pieces to land in our atelier.</p>
+        <h2 class="section-title">Just Landed</h2>
+        <p class="section-subtitle">The newest additions to the Aurent edit.</p>
         <div class="grid grid-4">
             @foreach($newArrivals as $product)
                 @include('components.product-card', ['product' => $product])
@@ -37,8 +37,8 @@
 
 <section class="section">
     <div class="container">
-        <h2 class="section-title">Bestsellers</h2>
-        <p class="section-subtitle">Most-loved by collectors around the world.</p>
+        <h2 class="section-title">Collector Favorites</h2>
+        <p class="section-subtitle">The timepieces our clients return to again and again.</p>
         <div class="grid grid-4">
             @foreach($bestsellers as $product)
                 @include('components.product-card', ['product' => $product])
@@ -49,8 +49,8 @@
 
 <section class="section" style="background:#fff;">
     <div class="container">
-        <h2 class="section-title">Our Maisons</h2>
-        <p class="section-subtitle">House brands and independent watchmakers we stand behind.</p>
+        <h2 class="section-title">The Makers We Back</h2>
+        <p class="section-subtitle">House ateliers and independent creators with a shared vision.</p>
         <div class="grid grid-4">
             @foreach($brands as $brand)
                 <a href="{{ route('brands.show', $brand->slug) }}" class="brand-logo">
@@ -64,8 +64,8 @@
 
 <section class="section">
     <div class="container">
-        <h2 class="section-title">From the Journal</h2>
-        <p class="section-subtitle">Stories, guides, and horological insights.</p>
+        <h2 class="section-title">Aurent Notes</h2>
+        <p class="section-subtitle">Guides, maker stories, and watch-care wisdom.</p>
         <div class="grid grid-3">
             @foreach($posts as $post)
                 <div class="product-card" style="padding:1.5rem;">
