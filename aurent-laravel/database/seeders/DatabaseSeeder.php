@@ -51,10 +51,13 @@ class DatabaseSeeder extends Seeder
         ]);
 
         $brands = [
-            ['name' => 'Aurent', 'slug' => 'aurent', 'description' => 'In-house atelier shaping modern luxury timepieces.'],
-            ['name' => 'Veyron & Co', 'slug' => 'veyron-co', 'description' => 'Sport-chic chronographs engineered for motion.'],
-            ['name' => 'Celestine Horology', 'slug' => 'celestine-horology', 'description' => 'Celestial-inspired dress watches with artisan dials.'],
-            ['name' => 'Argentis Works', 'slug' => 'argentis-works', 'description' => 'Marine-grade steel and vintage diver silhouettes.'],
+            ['name' => 'Aurent', 'slug' => 'aurent', 'description' => 'Curated in-house collection of modern luxury timepieces.'],
+            ['name' => 'Norbol', 'slug' => 'norbol', 'description' => 'Bold fusion cases and contemporary statement chronographs.'],
+            ['name' => 'Glemora', 'slug' => 'glemora', 'description' => 'Precision instruments inspired by ocean and lunar exploration.'],
+            ['name' => 'Trovex', 'slug' => 'trovex', 'description' => 'Iconic marine and tool watches built for enduring style.'],
+            ['name' => 'Audenmere', 'slug' => 'audenmere', 'description' => 'Avant-garde haute horology with signature octagonal cases.'],
+            ['name' => 'Caelum', 'slug' => 'caelum', 'description' => 'Elegant pilot and dress silhouettes with refined heritage.'],
+            ['name' => 'Phelion', 'slug' => 'phelion', 'description' => 'Discreet luxury sports watches with graceful proportions.'],
         ];
 
         foreach ($brands as $b) {
@@ -77,60 +80,121 @@ class DatabaseSeeder extends Seeder
 
         $watches = [
             [
-                'brand' => 'aurent', 'category' => 'dress-watches', 'gender' => 'MEN',
-                'name' => 'Aurent Sentinel', 'sku' => 'AUR-SNT-001',
-                'price' => 2450, 'stock' => 8,
-                'movement' => 'Automatic', 'case_material' => '316L Stainless Steel', 'case_diameter' => '40mm',
-                'dial' => 'Midnight Blue', 'crystal' => 'Sapphire', 'water_resistance' => '50m', 'strap' => 'Alligator Leather', 'warranty' => '5 years',
+                'brand' => 'audenmere', 'category' => 'dress-watches', 'gender' => 'MEN',
+                'name' => 'Audenmere Royal Court Perpetual', 'sku' => 'ADM-RCP-001',
+                'price' => 9000, 'stock' => 3,
+                'movement' => 'Automatic Perpetual', 'case_material' => '18k Rose Gold', 'case_diameter' => '41mm',
+                'dial' => 'Pink Horizon', 'crystal' => 'Sapphire', 'water_resistance' => '50m', 'strap' => 'Integrated Bracelet', 'warranty' => '5 years',
                 'featured' => true, 'new_arrival' => true,
+                'description' => 'A 41mm perpetual calendar in 18k rose gold with a pink horizon dial and a seamlessly integrated bracelet.',
             ],
             [
-                'brand' => 'aurent', 'category' => 'diver-watches', 'gender' => 'UNISEX',
-                'name' => 'Aurent Abyss', 'sku' => 'AUR-ABS-002',
-                'price' => 3200, 'stock' => 12,
-                'movement' => 'Automatic', 'case_material' => 'Titanium', 'case_diameter' => '42mm',
-                'dial' => 'Abyss Black', 'crystal' => 'Sapphire', 'water_resistance' => '300m', 'strap' => 'Titanium Bracelet', 'warranty' => '5 years',
-                'best_seller' => true,
-            ],
-            [
-                'brand' => 'aurent', 'category' => 'dress-watches', 'gender' => 'WOMEN',
-                'name' => 'Aurent Celestine', 'sku' => 'AUR-CLS-003',
-                'price' => 1850, 'stock' => 6,
-                'movement' => 'Quartz', 'case_material' => 'Rose Gold PVD', 'case_diameter' => '34mm',
-                'dial' => 'White Mother-of-Pearl', 'crystal' => 'Sapphire', 'water_resistance' => '30m', 'strap' => 'Satin', 'warranty' => '3 years',
+                'brand' => 'audenmere', 'category' => 'dress-watches', 'gender' => 'MEN',
+                'name' => 'Audenmere Royal Court Slate', 'sku' => 'ADM-RCS-002',
+                'price' => 10000, 'stock' => 2,
+                'movement' => 'Automatic Perpetual', 'case_material' => 'Black Ceramic', 'case_diameter' => '41mm',
+                'dial' => 'Slate Shadow', 'crystal' => 'Sapphire', 'water_resistance' => '50m', 'strap' => 'Integrated Bracelet', 'warranty' => '5 years',
                 'new_arrival' => true,
+                'description' => 'A 41mm black ceramic perpetual calendar with a slate shadow dial and brushed integrated bracelet.',
             ],
             [
-                'brand' => 'veyron-co', 'category' => 'sport-watches', 'gender' => 'MEN',
-                'name' => 'Veyron Stratos', 'sku' => 'VY-STR-001',
-                'price' => 1650, 'stock' => 15,
-                'movement' => 'Quartz Chronograph', 'case_material' => 'Stainless Steel', 'case_diameter' => '43mm',
-                'dial' => 'Racing Black', 'crystal' => 'Mineral', 'water_resistance' => '100m', 'strap' => 'Silicone', 'warranty' => '3 years',
+                'brand' => 'caelum', 'category' => 'dress-watches', 'gender' => 'UNISEX',
+                'name' => 'Caelum Santiago Verde', 'sku' => 'CAE-SVD-001',
+                'price' => 2400, 'stock' => 8,
+                'movement' => 'Automatic', 'case_material' => 'Stainless Steel', 'case_diameter' => '40mm',
+                'dial' => 'Verde Leaf', 'crystal' => 'Sapphire', 'water_resistance' => '100m', 'strap' => 'Steel Bracelet', 'warranty' => '4 years',
+                'featured' => true, 'best_seller' => true,
+                'description' => 'A 40mm steel automatic with a verde leaf dial, classic Roman numerals, and a brushed steel bracelet.',
+            ],
+            [
+                'brand' => 'caelum', 'category' => 'dress-watches', 'gender' => 'WOMEN',
+                'name' => 'Caelum Santiago Sunray', 'sku' => 'CAE-SSU-002',
+                'price' => 4800, 'sale_price' => 4600, 'stock' => 4,
+                'movement' => 'Automatic', 'case_material' => 'Steel & Yellow Gold', 'case_diameter' => '35mm',
+                'dial' => 'Silvered Sunray', 'crystal' => 'Sapphire', 'water_resistance' => '100m', 'strap' => 'Two-Tone Bracelet', 'warranty' => '4 years',
                 'best_seller' => true,
+                'description' => 'A 35mm two-tone dress watch with a silvered sunray dial and a refined steel and yellow-gold bracelet.',
             ],
             [
-                'brand' => 'celestine-horology', 'category' => 'dress-watches', 'gender' => 'MEN',
-                'name' => 'Celestine Aurora', 'sku' => 'CEL-AUR-001',
-                'price' => 4600, 'stock' => 5,
-                'movement' => 'Automatic', 'case_material' => 'Polished Steel', 'case_diameter' => '39mm',
-                'dial' => 'Champagne', 'crystal' => 'Sapphire', 'water_resistance' => '50m', 'strap' => 'Crocodile Leather', 'warranty' => '6 years',
-                'featured' => true,
-            ],
-            [
-                'brand' => 'argentis-works', 'category' => 'diver-watches', 'gender' => 'MEN',
-                'name' => 'Argentis Mariner', 'sku' => 'ARG-MAR-001',
-                'price' => 2100, 'stock' => 9,
-                'movement' => 'Automatic', 'case_material' => 'Bronze', 'case_diameter' => '41mm',
-                'dial' => 'Deep Ocean', 'crystal' => 'Sapphire', 'water_resistance' => '200m', 'strap' => 'Waxed Canvas', 'warranty' => '4 years',
+                'brand' => 'caelum', 'category' => 'dress-watches', 'gender' => 'WOMEN',
+                'name' => 'Caelum Dumont Quartz', 'sku' => 'CAE-DQT-003',
+                'price' => 3000, 'stock' => 6,
+                'movement' => 'Quartz', 'case_material' => 'Stainless Steel', 'case_diameter' => '38mm',
+                'dial' => 'Silver Mist', 'crystal' => 'Sapphire', 'water_resistance' => '30m', 'strap' => 'Leather Strap', 'warranty' => '3 years',
                 'best_seller' => true,
+                'description' => 'A 38mm quartz dress piece with a silver mist dial, slim case profile, and a supple leather strap.',
             ],
             [
-                'brand' => 'aurent', 'category' => 'aviator-watches', 'gender' => 'MEN',
-                'name' => 'Aurent Aviator', 'sku' => 'AUR-AVT-004',
-                'price' => 2900, 'stock' => 7,
-                'movement' => 'Automatic Chronograph', 'case_material' => 'Ceramic & Steel', 'case_diameter' => '43mm',
-                'dial' => 'Panda Silver', 'crystal' => 'Sapphire', 'water_resistance' => '100m', 'strap' => 'Perforated Leather', 'warranty' => '5 years',
+                'brand' => 'norbol', 'category' => 'sport-watches', 'gender' => 'MEN',
+                'name' => 'Norbol Essence Saxem', 'sku' => 'NRL-ESG-001',
+                'price' => 3500, 'stock' => 5,
+                'movement' => 'Automatic Chronograph', 'case_material' => 'Green Ceramic Composite', 'case_diameter' => '42mm',
+                'dial' => 'Emerald Saxem', 'crystal' => 'Sapphire', 'water_resistance' => '100m', 'strap' => 'Rubber', 'warranty' => '3 years',
+                'new_arrival' => true,
+                'description' => 'A 42mm tonneau-shaped chronograph with a vivid emerald saxem case and a textured rubber strap.',
+            ],
+            [
+                'brand' => 'norbol', 'category' => 'sport-watches', 'gender' => 'MEN',
+                'name' => 'Norbol Meca-10 Dark Matter', 'sku' => 'NRL-MDM-002',
+                'price' => 3500, 'stock' => 5,
+                'movement' => 'Manual 10-Day', 'case_material' => 'Black Ceramic', 'case_diameter' => '45mm',
+                'dial' => 'Obsidian', 'crystal' => 'Sapphire', 'water_resistance' => '50m', 'strap' => 'Rubber', 'warranty' => '3 years',
+                'best_seller' => true,
+                'description' => 'A 45mm black ceramic powerhouse with a 10-day manual movement and a dark, architectural dial.',
+            ],
+            [
+                'brand' => 'norbol', 'category' => 'dress-watches', 'gender' => 'MEN',
+                'name' => 'Norbol Square Impact', 'sku' => 'NRL-SQI-003',
+                'price' => 3500, 'stock' => 4,
+                'movement' => 'Automatic', 'case_material' => 'Rose Gold PVD', 'case_diameter' => '42mm',
+                'dial' => 'Champagne Spark', 'crystal' => 'Sapphire', 'water_resistance' => '50m', 'strap' => 'Alligator', 'warranty' => '3 years',
                 'featured' => true,
+                'description' => 'A 42mm square automatic with a champagne spark dial and a rose-gold PVD case on alligator leather.',
+            ],
+            [
+                'brand' => 'glemora', 'category' => 'diver-watches', 'gender' => 'MEN',
+                'name' => 'Glemora Depthmaster 300', 'sku' => 'GLM-D300-001',
+                'price' => 5000, 'stock' => 6,
+                'movement' => 'Automatic Co-Axial', 'case_material' => 'Stainless Steel', 'case_diameter' => '42mm',
+                'dial' => 'Ocean Wave', 'crystal' => 'Sapphire', 'water_resistance' => '300m', 'strap' => 'Steel Bracelet', 'warranty' => '5 years',
+                'best_seller' => true,
+                'description' => 'A 42mm professional diver with a co-axial automatic movement and an ocean wave blue dial.',
+            ],
+            [
+                'brand' => 'glemora', 'category' => 'sport-watches', 'gender' => 'MEN',
+                'name' => 'Glemora Lunar Snoopy', 'sku' => 'GLM-LUN-002',
+                'price' => 4000, 'sale_price' => 3700, 'stock' => 3,
+                'movement' => 'Automatic Chronograph', 'case_material' => 'Stainless Steel', 'case_diameter' => '42mm',
+                'dial' => 'Silver Snoopy', 'crystal' => 'Sapphire', 'water_resistance' => '50m', 'strap' => 'Nylon Strap', 'warranty' => '5 years',
+                'best_seller' => true,
+                'description' => 'A 42mm anniversary chronograph with a silver snoopy dial and a commemorative nylon strap.',
+            ],
+            [
+                'brand' => 'glemora', 'category' => 'sport-watches', 'gender' => 'MEN',
+                'name' => 'Glemora Lunar Professional', 'sku' => 'GLM-LPR-003',
+                'price' => 4800, 'stock' => 4,
+                'movement' => 'Manual Wind', 'case_material' => 'Stainless Steel', 'case_diameter' => '42mm',
+                'dial' => 'White Lacquer', 'crystal' => 'Hesalite', 'water_resistance' => '50m', 'strap' => 'Nylon Strap', 'warranty' => '5 years',
+                'new_arrival' => true,
+                'description' => 'A 42mm manually wound lunar chronograph with a white lacquer dial and a velcro-style nylon strap.',
+            ],
+            [
+                'brand' => 'phelion', 'category' => 'sport-watches', 'gender' => 'MEN',
+                'name' => 'Phelion Nautil Brown', 'sku' => 'PHE-NAU-001',
+                'price' => 3500, 'stock' => 5,
+                'movement' => 'Automatic', 'case_material' => 'Rose Gold', 'case_diameter' => '40mm',
+                'dial' => 'Mocha', 'crystal' => 'Sapphire', 'water_resistance' => '120m', 'strap' => 'Composite Strap', 'warranty' => '5 years',
+                'best_seller' => true,
+                'description' => 'A 40mm luxury sports watch in rose gold with a mocha dial and an integrated composite strap.',
+            ],
+            [
+                'brand' => 'trovex', 'category' => 'diver-watches', 'gender' => 'MEN',
+                'name' => 'Trovex Submarine Gold', 'sku' => 'TRO-SBG-001',
+                'price' => 6000, 'sale_price' => 5700, 'stock' => 2,
+                'movement' => 'Automatic', 'case_material' => '18k Yellow Gold', 'case_diameter' => '40mm',
+                'dial' => 'Azure Sun', 'crystal' => 'Sapphire', 'water_resistance' => '300m', 'strap' => 'Oyster Bracelet', 'warranty' => '5 years',
+                'best_seller' => true, 'featured' => true,
+                'description' => 'A 40m yellow gold diver with an azure sun dial and an oyster-style bracelet.',
             ],
         ];
 
@@ -138,7 +202,7 @@ class DatabaseSeeder extends Seeder
             $brand = Brand::where('slug', $w['brand'])->first();
             $category = Category::where('slug', $w['category'])->first();
             $slug = $this->slug($w['name']);
-            $description = "The {$w['name']} is a {$w['gender']} {$category->name} watch powered by a {$w['movement']} movement. It features a {$w['case_material']} {$w['case_diameter']} case, {$w['dial']} dial, {$w['crystal']} crystal, and {$w['water_resistance']} water resistance. Finished on a {$w['strap']}, it is backed by a {$w['warranty']} guarantee.";
+            $description = $w['description'] ?? "The {$w['name']} is a {$w['gender']} {$category->name} watch powered by a {$w['movement']} movement. It features a {$w['case_material']} {$w['case_diameter']} case, {$w['dial']} dial, {$w['crystal']} crystal, and {$w['water_resistance']} water resistance. Finished on a {$w['strap']}, it is backed by a {$w['warranty']} guarantee.";
 
             $svg = $this->watchSvg($w['name'], $w['dial']);
             $path = public_path("images/watches/{$slug}.svg");
@@ -152,7 +216,7 @@ class DatabaseSeeder extends Seeder
                 'sku' => $w['sku'],
                 'description' => $description,
                 'price' => $w['price'],
-                'sale_price' => null,
+                'sale_price' => $w['sale_price'] ?? null,
                 'stock' => $w['stock'],
                 'gender' => $w['gender'],
                 'movement' => $w['movement'],
@@ -225,21 +289,28 @@ class DatabaseSeeder extends Seeder
     }
 
     private function watchSvg(string $name, string $dial): string
-{
-    $color = match (strtolower($dial)) {
-        'midnight blue' => '#1B3A4B',
-        'abyss black' => '#1a1a1a',
-        'racing black' => '#222222',
-        'white mother-of-pearl' => '#f7f7f7',
-        'champagne' => '#E8DAB8',
-        'deep ocean' => '#0B3C49',
-        'panda silver' => '#e0e0e0',
-        default => '#333333',
-    };
+    {
+        $color = match (strtolower($dial)) {
+            'midnight blue' => '#1B3A4B',
+            'pink horizon' => '#D8A1A1',
+            'slate shadow' => '#3A3A3A',
+            'verde leaf' => '#2E5A42',
+            'silvered sunray' => '#D8D8D8',
+            'silver mist' => '#E0E0E0',
+            'emerald saxem' => '#0F5C3E',
+            'obsidian' => '#111111',
+            'champagne spark' => '#E5D2A8',
+            'ocean wave' => '#1F4E6F',
+            'silver snoopy' => '#D9D9D9',
+            'white lacquer' => '#F5F5F5',
+            'mocha' => '#6B4C3A',
+            'azure sun' => '#2F6B9A',
+            default => '#333333',
+        };
 
-    $brand = substr($name, 0, 1);
+        $brand = substr($name, 0, 1);
 
-    return <<<SVG
+        return <<<SVG
 <svg width="600" height="800" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
   <rect width="100%" height="100%" fill="#F8F7F4"/>
   <rect x="125" y="50" width="350" height="700" rx="40" fill="#1a1a1a"/>
